@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/automaxadmin/static/css/main.dd830654.css",
+    "main.js": "/automaxadmin/static/js/main.668a2f19.js",
+    "static/js/488.c0860a0c.chunk.js": "/automaxadmin/static/js/488.c0860a0c.chunk.js",
+    "index.html": "/automaxadmin/index.html",
+    "main.dd830654.css.map": "/automaxadmin/static/css/main.dd830654.css.map",
+    "main.668a2f19.js.map": "/automaxadmin/static/js/main.668a2f19.js.map",
+    "488.c0860a0c.chunk.js.map": "/automaxadmin/static/js/488.c0860a0c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd830654.css",
+    "static/js/main.668a2f19.js"
+  ]
+}

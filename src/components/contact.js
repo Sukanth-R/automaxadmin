@@ -16,7 +16,7 @@ const ContactsList = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await fetch('https://localhost:5000/api/contacts');
+        const response = await fetch('https://translator-0dye.onrender.com/api/contacts');
         if (!response.ok) {
           throw new Error('Failed to fetch contacts');
         }

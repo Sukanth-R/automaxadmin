@@ -9,7 +9,7 @@ const ProductDisplay = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("https://localhost:5000/api/products");
+        const response = await fetch("https://translator-0dye.onrender.com/api/products");
         const data = await response.json();
         // Filter products with category "Two Wheeler Lights"
         const filteredProducts = data.filter(
@@ -29,7 +29,7 @@ const ProductDisplay = () => {
   // Handle product deletion
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`https://localhost:5000/api/products/${id}`, {
+      const response = await fetch(`https://translator-0dye.onrender.com/api/products/${id}`, {
         method: "DELETE",
       });
 

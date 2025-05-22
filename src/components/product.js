@@ -32,7 +32,7 @@ const AddProductPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://localhost:5000/api/products", product);
+      const response = await axios.post("https://translator-0dye.onrender.com/api/products", product);
       alert("Product added successfully!");
       console.log(response.data);
     } catch (error) {

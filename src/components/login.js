@@ -29,11 +29,11 @@ export default function Login() {
       {/* Left Section - Welcome and Logo */}
       <div className="w-full md:w-3/5 bg-red-600 text-white p-12 flex flex-col justify-center items-center">
         <img
-          src="https://adminastraautomax.in/images/AUTOMAX.png"
+          src="https://admin.astraautomax.in/images/AUTOMAX.png"
           alt="Automax"
-          className="mb-6 h-16 w-auto"
+          className="mb-6 h-16 w-auto mt-4"
         />
-        <h1 className="text-4xl font-bold mb-4 tracking-widest text-center">Welcome Back Admin!</h1>
+        <h1 className="text-4xl font-bold mb-4 text-gray-900 tracking-widest text-center">Welcome Back Admin!</h1>
       </div>
 
       {/* Right Section - Login Form */}

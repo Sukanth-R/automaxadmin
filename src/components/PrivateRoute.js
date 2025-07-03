@@ -1,23 +1,10 @@
-import React, { useContext } from "react";
-import { Navigate } from "react-router-dom";
-import { AuthContext } from "./AuthContext";
+import { Navigate, Outlet } from "react-router-dom";
 
-const PrivateRoute = ({ children }) => {
-  const { user, loading } = useContext(AuthContext);
-
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
-      </div>
-    );
-  }
-
-  if (!user) {
-    return <Navigate to="/login" replace />;
-  }
-
-  return children;
-};
-
-export default PrivateRoute;
+/**
+ * If a JWT is stored in localStorage ➜ render the child routes.
+ * Otherwise bounce the user to /login.
+ */
+export default function PrivateRoute() {
+  const token = localStorage.getItem("token");
+  return token ? <Outlet /> : <Navigate to="/login" replace />;
+}

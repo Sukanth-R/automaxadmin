@@ -2,7 +2,7 @@
   "name": "ksp_yarns",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sukanth-r.github.io/automaxadmin",
+  "homepage": "https://admin.astraautomax.in",
   "dependencies": {
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.1",

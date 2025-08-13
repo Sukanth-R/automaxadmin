@@ -32,7 +32,7 @@ const AddProductPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/products", product);
+      const response = await axios.post("https://translator-0dye.onrender.com/api/products", product);
       alert("Product added successfully!");
       console.log(response.data);
     } catch (error) {
@@ -104,7 +104,7 @@ const AddProductPage = () => {
             </Link>
           </div>
         </div>
-        <h1 className="text-2xl font-bold mt-6">Add New Product</h1>
+        <h1 className="text-2xl font-bold mt-6">Add A New Product</h1>
         <form onSubmit={handleSubmit} className="space-y-6 mt-6">
           <div>
             <label className="block text-sm font-medium text-gray-700">
